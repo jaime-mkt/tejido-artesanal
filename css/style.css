@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Gentium Plus", serif;
+    font-style: italic;
+    font-weight: 700;
+}
+/*header*/
+header{
+    height: 200px;
+    background-color: #f0eced;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 120px;
+    height: 110px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    }
+header nav ul li{
+    font-size: 25px;
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover{
+    color: #cc0033;
+}
+
+/*main*/
+.hero{
+    height: 550px;
+    color: white;
+    text-align: center;
+    background-image: url("../img/vestido-joseph-azul-modelo-photoroom-photoroom.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero h1{
+    font-size: 60px;
+}
+.hero p{
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+}
+.hero a{
+    background-color: #cc0033;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}  
+
+.hero a:hover{
+    background-color: black;
+}
+.chalecos{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chalecos div{
+    width: 50%;
+    padding: 20px;
+}
+.chalecos div h2{
+    background-color: #cc0033a7;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.chalecos img{
+    width: 480px;
+    height: 580px;
+}
+
+.cuadros h2{
+    background-color: #c0bcbd;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cuadros h3{
+    padding: 10px;
+}
+.cuadros img{
+    width: 300px;
+    height: 410px;
+}
+.cuadros a{
+    background-color: #cc0033;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.tarjetas a:hover{
+    background-color: #151414;
+}
+.cuadros .tarjetas div{
+    border: 1px solid #cc0033;
+    width: 302px;
+    height: 510px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+}
+.cuadros .tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    margin: 30px;
+}
+.grid-galeria div{
+    position: relative;
+}
+.grid-galeria div h3{
+    position: absolute;
+    bottom: 0;
+    background-color: #cc00337e;
+    width: 100%;
+    color: white;
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-4{
+    grid-column: span 2;
+}
+.img-5{
+    grid-row: span 2;
+}
+.img-6{
+    grid-row: span 2;
+}
+
+
+/*footer*/
+footer{
+    height: 300px;
+    background-color: #f0eced;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 120px;
+    height: 110px;
+}
+
+footer div a img{
+    width: 35px;
+    height: 35px;
+}
+
+footer div ul{
+    list-style: none;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+.datos h2{
+    border : 1px solid #cc0033;
+    color: #151414;
+    text-align: center;
+    margin: 10px;
+}
+
+@media screen and (max-width:900px){
+    .grid-galeria{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .img-4, .img-4, .img-9{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .img-9{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:1037px){
+    .tarjetas{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:854px){
+    .chalecos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:552px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:490px){
+    .grid-galeria{
+        grid-template-columns: 1fr ;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+/*DAMA*/
+
+.damat{
+    text-align: center;
+}
+
+.carousel{
+
+    width: 30%;
+    padding: 30px;
+
+}
+
+
+
+
+
+
