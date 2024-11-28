@@ -9,25 +9,36 @@ body{
     font-style: italic;
     font-weight: 700;
 }
+
 /*header*/
+
 header{
-    height: 200px;
-    background-color: #f0eced;
+    height: 180px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header img{
     width: 120px;
     height: 110px;
 }
+
+header{
+    padding: 40px;
+}
+
+
 header nav ul{
     list-style: none;
     display: flex;
     }
+
 header nav ul li{
     font-size: 25px;
-    margin: 10px;
+    margin: 20px;
+
 }
 
 header nav ul li a{
@@ -40,6 +51,7 @@ header nav ul li a:hover{
 }
 
 /*main*/
+
 .hero{
     height: 550px;
     color: white;
@@ -58,11 +70,13 @@ header nav ul li a:hover{
 .hero h1{
     font-size: 60px;
 }
+
 .hero p{
     font-size: 20px;
     padding: 30px;
     color: white;
 }
+
 .hero a{
     background-color: #cc0033;
     text-decoration: none;
@@ -74,43 +88,56 @@ header nav ul li a:hover{
 .hero a:hover{
     background-color: black;
 }
+
 .chalecos{
     margin: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
 .chalecos div{
     width: 50%;
     padding: 20px;
 }
+
 .chalecos div h2{
-    background-color: #cc0033a7;
-    color: white;
+    background-color: #f46185;
+    color: black;
     text-align: center;
     font-size: 40px;
+}
+.chalecos div p{
+    font-size: 25px;
+    margin: 30px;
 }
 
 .chalecos img{
     width: 480px;
     height: 580px;
+    border: 1px solid #cc0033;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
 }
 
-.cuadros h2{
-    background-color: #c0bcbd;
-    color: white;
+.masvendido h2{
+    background-color: white;
+    color: #cc0033;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.cuadros h3{
+.masvendido h3{
     padding: 10px;
 }
-.cuadros img{
+
+.masvendido img{
     width: 300px;
     height: 410px;
 }
-.cuadros a{
+
+.masvendido a{
     background-color: #cc0033;
     color: white;
     text-decoration: none;
@@ -121,7 +148,8 @@ header nav ul li a:hover{
 .tarjetas a:hover{
     background-color: #151414;
 }
-.cuadros .tarjetas div{
+
+.masvendido .tarjetas div{
     border: 1px solid #cc0033;
     width: 302px;
     height: 510px;
@@ -131,7 +159,8 @@ header nav ul li a:hover{
 -moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
 box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
 }
-.cuadros .tarjetas{
+
+.masvendido .tarjetas{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -145,9 +174,11 @@ box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
     gap: 10px;
     margin: 30px;
 }
+
 .grid-galeria div{
     position: relative;
 }
+
 .grid-galeria div h3{
     position: absolute;
     bottom: 0;
@@ -155,6 +186,7 @@ box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
     width: 100%;
     color: white;
 }
+
 .grid-galeria div img{
     width: 100%;
     height: 100%;
@@ -173,6 +205,7 @@ box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
 
 
 /*footer*/
+
 footer{
     height: 300px;
     background-color: #f0eced;
@@ -251,16 +284,186 @@ footer div ul{
 
 /*DAMA*/
 
-.damat{
+.titulod h1{
+    color: #cc0033;
     text-align: center;
+    margin: 30px;
 }
 
-.carousel{
-
-    width: 30%;
-    padding: 30px;
-
+.abrigos h2{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
 }
+
+.abrigos h3{
+    padding: 10px;
+}
+
+.abrigos img{
+    width: 300px;
+    height: 410px;
+}
+
+.abrigos a{
+    background-color: #cc0033;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.abrigos .tarjetasa div{
+    border: 1px solid #cc0033;
+    width: 302px;
+    height: 510px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+}
+
+.abrigos .tarjetasa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.chaquetas h2{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
+}
+
+.chaquetas h3{
+    padding: 10px;
+}
+
+.chaquetas img{
+    width: 300px;
+    height: 410px;
+}
+
+.chaquetas a{
+    background-color: #cc0033;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.chaquetas .tarjetasc div{
+    border: 1px solid #cc0033;
+    width: 302px;
+    height: 510px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+}
+
+.chaquetas .tarjetasc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.tops h2{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
+}
+
+.tops h3{
+    padding: 10px;
+}
+
+.tops img{
+    width: 300px;
+    height: 410px;
+}
+
+.tops a{
+    background-color: #cc0033;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.tops .tarjetast div{
+    border: 1px solid #cc0033;
+    width: 302px;
+    height: 510px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+}
+
+.tops .tarjetast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.vestidos h2{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
+}
+
+.vestidos h3{
+    padding: 10px;
+}
+
+.vestidos img{
+    width: 300px;
+    height: 410px;
+}
+
+.vestidos a{
+    background-color: #cc0033;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.vestidos .tarjetasv div{
+    border: 1px solid #cc0033;
+    width: 302px;
+    height: 510px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+box-shadow: 13px 14px 19px 2px rgba(0,0,0,0.75);
+}
+
+.vestidos .tarjetasv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+
+
 
 
 
